@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Markvart's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Magnar Markvart</div>
+        <div class="logo">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Magnar Markvart</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Magnar Markvart Profile Picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">
+                Hello, I'm
+            </p>
+            <h1 class="title">Magnar Markvart</h1>
+            <p class="section__text__p2">
+                IT Systems Development Student in TalTech
+            </p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/resume-intern.pdf')">
+                Download CV</button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+                class="icon" onclick=
+                "location.href='https://www.linkedin.com/in/magnar-markvart-74a096133/'"/>
+                <img src="./assets/github.png" alt="My GitHub Profile"
+                class="icon" onclick=
+                "location.href='https://github.com/MagnarMarkvart'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <img src="assets/arrow.png" alt="Arrow Icon" class="icon top-arrow"
+        onclick="window.scrollTo(0, 0)">
+        <p class="section__text__p1">
+            Get To Know More
+        </p>
+        <h1 class="title">
+            About Me
+        </h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about-pic.jpeg" 
+                     alt="Profile Picture"
+                     class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="text-container">
+                        <h3>My Motivation</h3>
+                        <p>
+                            I am a second year system development student in TalTech 
+                            and I am actively looking for development 
+                            job to kickstart my career. 
+                            I have studied multiple technologies, 
+                            like Java, .NET, Python etc., in university, 
+                            but I feel that to be confident in my abilities 
+                            I need to utilize my knowledge in a workplace environment. 
+                            I am eager to learn and better myself. I am eager to work 
+                            hard to better my skills to a point where I would be an 
+                            important member for any software development team. I look 
+                            forward to get an opportunity to work as a developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">
+            My Experience 
+        </p>
+        <h1 class="title">
+            As a Student
+        </h1>
+        <div class="section-container">
+            <img src="assets/arrow.png" alt="Arrow Icon" class="icon top-arrow"
+             onclick="location.href='./#about'">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/education.png" 
+                                alt="Education Icon"
+                                class="icon"
+                        />
+                        <h3>Education</h3><br>
+                        <p>
+                            <b>University</b> <br>
+                            TalTech <br>
+                            Major in Information Technologies<br>
+                            Minor in Systems Development <br>
+                            (Second Course)
+                        </p><br>
+                        <p>
+                            <b>Gymnasium</b> <br>
+                            Gustav Adolf Grammar School <br>
+                            (French/English Language Studies Focus)
+                        </p><br>
+                        <p>
+                            <b>Primary and Secondary School</b> <br>
+                            Tallinn English College
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/studies.png" 
+                                alt="Experience Icon"
+                                class="icon"
+                        />
+                        <h3>Internship Prerequisites</h3><br>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <p>Introduction to Programming</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <p>Programming in C#</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <p>Fundamentals of Networking</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <p>Algorithms and Data Structures</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <p>Database Basics</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/experience.png" 
+                                alt="Experience Icon"
+                                class="icon"
+                        />
+                        <h3>Job Skills</h3><br>
+                        <div class="article-container-skills">
+                            <article class="skill">
+                                <img
+                                    src="./assets/success.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>HTML and CSS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>C#</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>Python</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>Java</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>Databases</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>SQL</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>.NET Framework</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>Git</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                            <article class="skill">
+                                <img
+                                  src="./assets/success.png"
+                                  alt="Experience icon"
+                                  class="icon"
+                                />
+                                <div>
+                                  <h3>Entity Framework</h3>
+                                  <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Review My</p>
+        <h1 class="title">Projects</h1>
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <img src="assets/arrow.png" alt="Arrow Icon" class="icon top-arrow"
+                 onclick="location.href='./#experience'">
+                <div class="article-container">
+                    <img 
+                        src="assets/project-1.png" 
+                        alt="Project 1"
+                        class="project-img"
+                    /> 
+                </div>
+                <h3 class="project-title">
+                    Project One
+                </h3>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MagnarMarkvart'"
+                    >
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="assets/project-2.png" 
+                        alt="Project 2"
+                        class="project-img"
+                    /> 
+                </div>
+                <h3 class="project-title">
+                    Project Two
+                </h3>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MagnarMarkvart'"
+                    >
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="assets/project-3.png" 
+                        alt="Project 3"
+                        class="project-img"
+                    /> 
+                </div>
+                <h3 class="project-title">
+                    Project Three
+                </h3>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MagnarMarkvart'"
+                    >
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
