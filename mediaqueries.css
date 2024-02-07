@@ -9,6 +9,21 @@
     }
 }
 
+@media screen and (max-width: 1350px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    section, .section-container {
+        height: fit-content;
+    }
+}
+
 
 
 @media screen and (max-width: 1200px) {
