@@ -101,6 +101,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentCategory = null;
 
+    // Function to preload images
+    const preloadImages = (images) => {
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src.trim();
+        });
+    };
+
+    // Preload images for each category at the beginning
+    categories.forEach(category => {
+        const skillsIcons = category.getAttribute("data-icons").split(",");
+        preloadImages(skillsIcons); // Preload images
+    });
+
     categories.forEach(category => {
         category.addEventListener("mouseenter", () => {
             if (currentCategory && currentCategory !== category) {
@@ -150,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
         skillsDisplayTitle.textContent = "Hover or click on a category to see my stack!";
     });
 });
+
 
 // Education dropdown functionality
 document.addEventListener("DOMContentLoaded", () => {
