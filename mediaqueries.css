@@ -49,6 +49,9 @@
         width: 220px;
         height: 220px;
     }
+    .section__pic-container img {
+        width: 100%;
+    }
     /* About */
     #about .section-container {
         flex-direction: column;
