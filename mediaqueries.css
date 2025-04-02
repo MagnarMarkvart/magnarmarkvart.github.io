@@ -1,132 +1,174 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
+/*** TABLET ***/
+@media (max-width: 1024px) {
+    :root {
+        --header-height: 100px;
     }
 
-    .about-containers {
-        flex-wrap: wrap;
-    }
-}
+    /* Header */
 
-@media screen and (max-width: 1350px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-
-    .about-containers {
-        flex-wrap: wrap;
-    }
-
-    section, .section-container {
-        height: fit-content;
-    }
-}
-
-
-
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-
-    #hamburger-nav {
+    header .menu-links {
         display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        padding: 0;
+        gap: 1rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: right;
+        max-height: 0;
+        width: 0;
+        overflow: hidden;
+        transition: all 1s ease;
     }
-    #experience, .experience-details-container {
-        margin-top: 2rem;
+    header .menu-links.open {
+        display: flex;
+        max-height: 300px;
+        padding: 1.5rem;
+        background-color: var(--accent-2);
+        width: 150px;
     }
-
-    #profile, .section-container {
-        display: block;
+    .burger-icon {
+        display: inline-block !important;
     }
-
-    .arrow, .top-arrow {
+    #logo-without-brand {
+        display: flex;
+        width: 75px;
+    }
+    #logo {
         display: none;
     }
 
-    section, .section-container {
-        height: fit-content;
+    /* Hero */
+    #profile .content-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    section {
-        margin: 0 5%;
-    }
-
     .section__pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
+        width: 220px;
+        height: 220px;
     }
-
-    .about-containers {
-        margin-top: 0;
+    /* About */
+    #about .section-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
+/*** MOBILE ***/
+@media (max-width: 767px) {
+    :root {
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+        --text-font-size: 1rem;
+        --button-font-size: 0.75rem;
+        --nav-font-size: 1.5rem;
     }
 
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
-    }
-    article {
-        font-size: 1rem;
+    .title:not(h1) {
+        margin-bottom: 1.5rem;
     }
 
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
+    .details-container--about .icon {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
-    .about-containers, .contact-info-upper-container, .btn-container {
-        flex-wrap: wrap;
-    }
-
-    .contact-info-container {
-        margin: 0;
-    }
-
-    .contact-info-container p, .nav-links li a {
-        font-size: 1rem;
-    }
-
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
-    .nav-links {
+    .about-containers {
         flex-direction: column;
-        gap: 0.5rem;
+        align-items: center;
         text-align: center;
     }
 
-    .section__pic-container {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
+    .details-container--about {
+        width: 100%;
     }
 
-    .section__text__p2 {
-        font-size: 1.25rem;
+    .details-container--about:first-of-type {
+        order: 3;
     }
 
-    .title {
-        font-size: 2rem;
+    .education-content {
+        text-align: left;
     }
 
-    .text-container {
-        text-align: justify;
+    /* Footer */
+    footer .menu-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        font-size: smaller;
     }
-    .text-container h3 {
-        text-align: center;
+
+    .job-article--skills > div {
+        flex-basis: 32% !important;
+        justify-content: center; 
+        opacity: 0.5;
+        transition: opacity 0.5s ease;
+    }
+    .job-article--skills {
+        gap: 1.5rem 2% !important;
+    }
+    .focus {
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+    }
+    .category img {
+        width: 2.5rem;
+        height: auto;
+    }
+    .skill-icon {
+        width: 2rem;
+        height: auto;
+    }
+    .skill-icon[alt="Oracle SQL icon"] {
+        width: 3.5rem;
+        height: auto;
+        padding-block: calc((2rem - 8.6834px) / 2) !important;
+    }
+    .skill-item {
+        flex-basis: 32%;
+    }
+    #skills-display {
+        flex-wrap: wrap;
+        gap: 1.5rem 1% !important;
+    }
+}
+
+/** CUSTOM **/
+@media (max-width: 600px) {
+    .contact-info-upper-container {
+        padding: 1rem;
+        width: min-content;
+    }
+}
+@media (max-width: 400px) {
+    .contact-info-container p {
+        font-size: smaller;
+    }
+}
+@media (max-width: 900px) {
+    .job-article--skills > div {
+        flex-basis: 40%;
+        justify-content: center; 
+        opacity: 0.5;
+        transition: opacity 0.5s ease;
+    }
+    .job-title {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .company {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 450px) {
+    .category {
+        flex-basis: 33%;
+    }
+    #categories {
+        flex-wrap: wrap;
+        gap: 1.5rem 0 !important;
     }
 }

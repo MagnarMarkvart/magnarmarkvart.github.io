@@ -1,0 +1,27 @@
+<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">Css 3 icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by UIUX Mall - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/wordpress" title="wordpress icons">Wordpress icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/backend" title="backend icons">Backend icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/design" title="design icons">Design icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/database" title="database icons">Database icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/devops" title="devops icons">Devops icons created by SBTS2018 - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/accessible" title="accessible icons">Accessible icons created by Flat Icons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/hr" title="hr icons">Hr icons created by Eucalyp - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/search-engine-optimization" title="search engine optimization icons">Search engine optimization icons created by Sakurai - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/elementor" title="elementor icons">Elementor icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/full-stack" title="full stack icons">Full stack icons created by kliwir art - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/docker" title="docker icons">Docker icons created by pocike - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/azure" title="azure icons">Azure icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/php" title="php icons">Php icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/git" title="git icons">Git icons created by pocike - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/api" title="api icons">Api icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/portal" title="portal icons">Portal icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons">C sharp icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Flat Icons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/postgre" title="postgre icons">Postgre icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/mysql" title="mysql icons">Mysql icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/oracle" title="oracle icons">Oracle icons created by ZFreet - Flaticon</a>

@@ -3,459 +3,481 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="M.Markvart" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <!-- Favicon END -->
     <title>M. Markvart's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Magnar Markvart</div>
-        <div class="logo">
-            <ul class="nav-links">
+    <header>
+        <div class="header-content">
+
+            <div 
+            class="logo"
+            onclick="window.scrollTo(0, 0)">
+                <img id="logo" src="assets/Logos/logo.svg" alt="MM Solutions Logo">
+                <img id="logo-without-brand" src="assets/Logos/logo-without-brand.svg" alt="MM Solutions Logo">
+            </div>
+            <i onclick="toggleMenu()" class="fa-solid fa-bars burger-icon"></i>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="content-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile_real.jpg" alt="Magnar Markvart Profile Picture"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">
+                    Hello, I'm
+                </p>
+                <h1 class="title">Magnar Markvart</h1>
+                <span class="auto-type"></span>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/magnar_markvart_CV.pdf')">
+                    My CV</button>
+                    <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">
+                    Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn Profile"
+                    class="icon" 
+                    onclick="window.open('https://www.linkedin.com/in/magnar-markvart-74a096133/')"
+                    />
+                    <img 
+                    src="./assets/github.png" 
+                    alt="My GitHub Profile"
+                    class="icon" 
+                    onclick="window.open('https://github.com/MagnarMarkvart')"
+                    
+                    />
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="about">
+        <div class="content-container">
+            <p class="section__text__p1">
+                Get To Know More
+            </p>
+            <h2 class="title">
+                About Me
+            </h2>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="assets/about-pic.jpeg" 
+                        alt="Profile Picture"
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="text-container">
+                            <h3>My Motivation</h3>
+                            <p>
+                                I’m a Web developer with a year of agency experience, skilled in SEO principles, web accessibility, and custom
+                                development. I’ve worked with different page builders, APIs in many client projects, ensuring functional, accessible and modern websites.
+                                Currently I am also studying software engineering at TalTech. I have a passion for learning and tackling
+                                new challenges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <section id="experience">
+        <div class="content-container">
+            <p class="section__text__p1">
+                Take a Look at My
+            </p>
+            <h2 class="title">
+                Skills & Experience
+            </h2>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container--about">
+                            <img src="assets/education.png" 
+                                    alt="Education Icon"
+                                    class="icon"
+                            />
+                            <h3>Education</h3>
+
+                        <div class="education">
+                            <div class="education-item active">
+                                <h4 class="education-title">
+                                    University
+                                    <span class="dropdown-icon">+</span>
+                                </h4>
+                                <div class="education-content">
+                                    <p class="focus">TalTech - Final Course</p>
+                                    <p>Major in Information Technologies</p>
+                                    <p>Minor in Systems Development</p>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <h4 class="education-title">
+                                    High School
+                                    <span class="dropdown-icon">+</span>
+                                </h4>
+                                <div class="education-content">
+                                    <p class="focus">Gustav Adolf Grammar School</p>
+                                    <p>French/English Language Studies Focus</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="details-container--about work-experience">
+                            <img src="assets/studies.png" 
+                                    alt="Experience Icon"
+                                    class="icon"
+                            />
+                            <h3>Work Experience</h3><br>
+                            <div class="article-container">
+                                <article class="job-article">
+                                    <div class="job-article-text">
+                                        <p class="job-title">Web Developer - 1 Year (2024-)</p>
+                                        <p class="company">Nobel Digital</p>
+                                    </div>
+                                    <div class="job-article--skills">
+                                        <div>
+                                            <img
+                                            src="./assets/Icons/wordpress.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                        />
+                                            <span>WordPress</span>
+                                        </div>
+                                        <div>
+                                            <img
+                                            src="./assets/Icons/elementor.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                        />
+                                            <span>Elementor</span>
+                                        </div>
+                                        <div>
+                                            <img
+                                            src="./assets/Icons/seo.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                        />
+                                            <span>SEO</span>
+                                        </div>
+                                        <div>
+                                            <img
+                                            src="./assets/Icons/authorization.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                        />
+                                            <span>Web Accessibility</span>
+                                        </div>
+                                        <div>
+                                            <img
+                                            src="./assets/Icons/consultation.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                        />
+                                            <span>Client Consultiations</span>
+                                        </div>
+                                        <div>
+                                            <img
+                                            src="./assets/Icons/responsive.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                        />
+                                            <span>Modern Web Development</span>
+                                        </div>
+                                    </div>
+                                    <div id="current-skill"></div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="details-container--about skills">
+                            <img src="assets/experience.png" 
+                                    alt="Experience Icon"
+                                    class="icon"
+                            />
+                            <h3>Job Skills</h3><br>
+
+
+                            <div id="skills-visualizer">
+                                <div id="categories">
+                                    <div class="category" 
+                                         data-category="Full-Stack Development" 
+                                         data-skills="ASP.NET, WordPress, REST APIs"
+                                         data-icons="assets/Icons/asp-net.png, assets/Icons/wordpress.png, assets/Icons/api.png">
+                                        <img src="assets/Icons/coding.png" alt="Full Stack">
+                                    </div>
+
+                                    <div class="category" 
+                                         data-category="Frontend Development" 
+                                         data-skills="HTML, CSS, SASS, JavaScript"
+                                         data-icons="assets/Icons/html.png, assets/Icons/css-3.png, assets/Icons/sass.png, assets/Icons/java-script.png">
+                                        <img src="assets/Icons/frontend.png" alt="Frontend">
+                                    </div>
+                                
+                                    <div class="category" 
+                                         data-category="Backend Development" 
+                                         data-skills="PHP, Java, C#, Python"
+                                         data-icons="assets/Icons/php.png, assets/Icons/java.png, assets/Icons/c-sharp.png, assets/Icons/python.png">
+                                        <img src="assets/Icons/backend.png" alt="Backend">
+                                    </div>
+                                
+                                    <div class="category" 
+                                         data-category="Databases" 
+                                         data-skills="PostgreSQL, MySQL, Oracle SQL"
+                                         data-icons="assets/Icons/postgresql.png, assets/Icons/mysql.png, assets/Icons/oracle-sql.png">
+                                        <img src="assets/Icons/database.png" alt="Databases">
+                                    </div>
+                                
+                                    <div class="category" 
+                                         data-category="DevOps & Tooling" 
+                                         data-skills="Docker, Git, GitHub, Postman, Azure"
+                                         data-icons="assets/Icons/docker.png, assets/Icons/git.png, assets/github.png, assets/Icons/postman.png, assets/Icons/azure.png">
+                                        <img src="assets/Icons/devops.png" alt="DevOps">
+                                    </div>
+                                </div>
+                            
+                                <div id="skills-display--title">Hover or click on a category to see my stack!</div>
+                                <div id="skills-display"></div>
+                            </div>
+                            
+
+
+
+                            <!-- <div class="article-container-skills">
+                                <article class="skill">
+                                    <img
+                                        src="./assets/success.png"
+                                        alt="Experience icon"
+                                        class="icon"
+                                    />
+                                    <div>
+                                        <h3>HTML and CSS</h3>
+                                        <p>Advanced</p>
+                                    </div>
+                                </article>
+                                <article class="skill">
+                                    <img
+                                    src="./assets/success.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                    <div>
+                                    <h3>WordPress</h3>
+                                    <p>Advanced</p>
+                                    </div>
+                                </article>
+                                <article class="skill">
+                                    <img
+                                    src="./assets/success.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                    <div>
+                                    <h3>Databases / SQL</h3>
+                                    <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article class="skill">
+                                    <img
+                                    src="./assets/success.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                    <div>
+                                    <h3>.NET Framework</h3>
+                                    <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article class="skill">
+                                    <img
+                                    src="./assets/success.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                    <div>
+                                    <h3>Responsive Web</h3>
+                                    <p>Advanced</p>
+                                    </div>
+                                </article>
+                            </div> -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="projects">
+        <div class="content-container">
+            <p class="section__text__p1">Review Some Of My</p>
+            <h2 class="title">Projects</h2>
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="assets/uno_project.png" 
+                            alt="Uno Project"
+                            class="project-img"
+                        /> 
+                    </div>
+                    <h3 class="project-title">
+                        UNO! Console and Web Application (.NET / C#)
+                    </h3>
+                    <p class="project-description">
+                        Playable game with classic UNO! rules, 
+                        saving functionality with two methods, 
+                        simple AI players integrated 
+                    </p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/MagnarMarkvart/Uno_CardGame'"
+                        >
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="assets/book_project.png" 
+                            alt="Book Project"
+                            class="project-img"
+                        /> 
+                    </div>
+                    <h3 class="project-title">
+                        Book Rating Project (HTML, CSS and PHP)
+                    </h3>
+                    <p class="project-description">
+                        CRUD Controllers for books and authors, 
+                        data is saved to text files, 
+                        simple (one of my first) yet effective book management web app
+                    </p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/MagnarMarkvart/Book_Management_WebApp'"
+                        >
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="assets/graph_project.png" 
+                            alt="Graph Project"
+                            class="project-img"
+                        /> 
+                    </div>
+                    <h3 class="project-title">
+                        Implementation of Kosaraju's Algorithm (Java)
+                    </h3>
+                    <p class="project-description">
+                        Implementation of a linear time algorithm - Kosaraju's Algorithm, 
+                        program finds strongly connected components in randomly generated graphs, 
+                        output of the program is presented in a readable form in the console
+                    </p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/MagnarMarkvart/Implementation_Of_Kosaraju_Algorithm'"
+                        >
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="contact">
+        <div class="content-container">
+            <p class="section__text__p1">Get In Touch</p>
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <a 
+                    class="icon-link" 
+                    href="mailto:mmmagnar@gmail.com"
+                    target="_blank"
+                    >
+                        <img src="./assets/email.png" 
+                            alt="Email Icon"
+                            class="icon contact-icon email-icon"
+                        />
+                        <p>
+                            mmmagnar@gmail.com
+                        </p>
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a 
+                    class="icon-link" 
+                    href="https://www.linkedin.com/in/magnar-markvart-74a096133/"
+                    target="_blank"
+                    >
+                        <img src="./assets/linkedin.png" 
+                            alt="LinkedIn Icon"
+                            class="icon contact-icon"
+                        />
+                        <p>
+                            LinkedIn
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <footer>
+        <div class="content-container">
+            <ul class="menu-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Magnar Markvart</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="divider"></div>
+            <div id="footer-text">
+                <span id="copyright">Copyright &#169; Magnar Markvart 2025</span>
+                <span>Website is written from scratch using HTML, CSS and vanilla JavaScript.</span>
             </div>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile_real.jpg" alt="Magnar Markvart Profile Picture"/>
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">
-                Hello, I'm
-            </p>
-            <h1 class="title">Magnar Markvart</h1>
-            <p class="section__text__p2">
-                IT Systems Development Student in TalTech
-            </p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/magnar_markvart_CV.pdf')">
-                Download CV</button>
-                <button 
-                class="btn btn-color-1" 
-                onclick="location.href='./#contact'">
-                Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
-                class="icon" onclick=
-                "location.href='https://www.linkedin.com/in/magnar-markvart-74a096133/'"/>
-                <img src="./assets/github.png" alt="My GitHub Profile"
-                class="icon" onclick=
-                "location.href='https://github.com/MagnarMarkvart'"/>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <img src="assets/arrow.png" alt="Arrow Icon" class="icon top-arrow"
-        onclick="window.scrollTo(0, 0)">
-        <p class="section__text__p1">
-            Get To Know More
-        </p>
-        <h1 class="title">
-            About Me
-        </h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="assets/about-pic.jpeg" 
-                     alt="Profile Picture"
-                     class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="text-container">
-                        <h3>My Motivation</h3>
-                        <p>
-                            As I near the completion of my second year in System Development at TalTech, 
-                            my passion for software engineering continues to fuel my aspirations. While 
-                            I've explored various languages including Java, Python, and HTML/CSS, it's in 
-                            C# that I find my greatest comfort. Yet, my ambition extends far beyond proficiency 
-                            in any single language; I aspire to grow into a versatile full-stack developer, adept 
-                            at both front-end and back-end technologies. With a mindset primed for adaptability and 
-                            a hunger for growth, I am prepared to make meaningful contributions to any development team, 
-                            leveraging every challenge as an opportunity for advancement.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">
-            My Experience 
-        </p>
-        <h1 class="title">
-            As a Student
-        </h1>
-        <div class="section-container">
-            <img src="assets/arrow.png" alt="Arrow Icon" class="icon top-arrow"
-             onclick="location.href='./#about'">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="assets/education.png" 
-                                alt="Education Icon"
-                                class="icon"
-                        />
-                        <h3>Education</h3><br>
-                        <p>
-                            <b>University</b> <br>
-                            TalTech <br>
-                            Major in Information Technologies<br>
-                            Minor in Systems Development <br>
-                            (Second Course)
-                        </p><br>
-                        <p>
-                            <b>Gymnasium</b> <br>
-                            Gustav Adolf Grammar School <br>
-                            (French/English Language Studies Focus)
-                        </p><br>
-                        <p>
-                            <b>Primary and Secondary School</b> <br>
-                            Tallinn English College
-                        </p>
-                    </div>
-                    <div class="details-container">
-                        <img src="assets/studies.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <h3>Internship Prerequisites (TalTech Standard)</h3><br>
-                        <div class="article-container">
-                            <article>
-                                <img
-                                    src="./assets/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <p>Introduction to Programming</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img
-                                    src="./assets/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <p>Programming in C#</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img
-                                    src="./assets/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <p>Fundamentals of Networking</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img
-                                    src="./assets/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <p>Algorithms and Data Structures</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img
-                                    src="./assets/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <p>Database Basics</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img
-                                    src="./assets/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <p>Web Technologies</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <img src="assets/experience.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <h3>Job Skills</h3><br>
-                        <div class="article-container-skills">
-                            <article class="skill">
-                                <img
-                                    src="./assets/success.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                                />
-                                <div>
-                                    <h3>HTML and CSS</h3>
-                                    <p>Advanced</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>C#</h3>
-                                  <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>Python</h3>
-                                  <p>Basic</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>Java</h3>
-                                  <p>Basic</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>Databases</h3>
-                                  <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>SQL</h3>
-                                  <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>.NET Framework</h3>
-                                  <p>Basic</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>Git</h3>
-                                  <p>Basic</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>Entity Framework</h3>
-                                  <p>Basic</p>
-                                </div>
-                            </article>
-                            <article class="skill">
-                                <img
-                                  src="./assets/success.png"
-                                  alt="Experience icon"
-                                  class="icon"
-                                />
-                                <div>
-                                  <h3>Responsive Web</h3>
-                                  <p>Basic</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Review Some Of My</p>
-        <h1 class="title">Projects</h1>
-        <div class="about-containers">
-            <div class="details-container color-container">
-                <img src="assets/arrow.png" alt="Arrow Icon" class="icon top-arrow"
-                 onclick="location.href='./#experience'">
-                <div class="article-container">
-                    <img 
-                        src="assets/uno_project.png" 
-                        alt="Uno Project"
-                        class="project-img"
-                    /> 
-                </div>
-                <h3 class="project-title">
-                    UNO! Console and Web Application (.NET / C#)
-                </h3>
-                <p class="project-description">
-                    Playable game with classic UNO! rules, 
-                    saving functionality with two methods, 
-                    simple AI players integrated 
-                </p>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MagnarMarkvart/Uno_CardGame'"
-                    >
-                        GitHub
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="assets/book_project.png" 
-                        alt="Book Project"
-                        class="project-img"
-                    /> 
-                </div>
-                <h3 class="project-title">
-                    Book Rating Project (HTML, CSS and PHP)
-                </h3>
-                <p class="project-description">
-                    CRUD Controllers for books and authors, 
-                    data is saved to text files, 
-                    simple (one of my first) yet effective book management web app
-                </p>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MagnarMarkvart/Book_Management_WebApp'"
-                    >
-                        GitHub
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="assets/graph_project.png" 
-                        alt="Graph Project"
-                        class="project-img"
-                    /> 
-                </div>
-                <h3 class="project-title">
-                    Implementation of Kosaraju's Algorithm (Java)
-                </h3>
-                <p class="project-description">
-                    Implementation of a linear time algorithm - Kosaraju's Algorithm, 
-                    program finds strongly connected components in randomly generated graphs, 
-                    output of the program is presented in a readable form in the console
-                </p>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MagnarMarkvart/Implementation_Of_Kosaraju_Algorithm'"
-                    >
-                        GitHub
-                    </button>
-                </div>
-            </div>
-        </div>
-        <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" 
-                     alt="Email Icon"
-                     class="icon contact-icon email-icon"
-                />
-                <p>
-                    <a href="mailto:mmmagnar@gmail.com">mmmagnar@gmail.com</a>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" 
-                     alt="LinkedIn Icon"
-                     class="icon contact-icon"
-                />
-                <p>
-                    <a href="https://www.linkedin.com/in/magnar-markvart-74a096133/">LinkedIn</a>
-                </p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; Magnar Markvart | Website is written from scratch using HTML, CSS and basic JavaScript.</p>
     </footer>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
     <script src="script.js"></script>
+    <!-- Scripts END -->    
 </body>
 </html>
