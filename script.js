@@ -26,7 +26,7 @@ function toggleMenu() {
     });
 }
 
-/*
+
 // typed.js
 var typed = new Typed(".auto-type", {
     strings: ["Web Developer", "IT Student in TalTech", "WordPress Enthusiast", "Tech Lover"],
@@ -165,4 +165,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-*/
