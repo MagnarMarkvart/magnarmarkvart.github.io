@@ -26,24 +26,7 @@ function toggleMenu() {
     });
 }
 
-/* function handleStickyHeader() {
-    const header = document.querySelector("nav");
-
-    function checkScroll() {
-        if (window.scrollY > 150) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-
-    checkScroll();
-
-    window.addEventListener("scroll", checkScroll);
-} */
-// Run the function when the script loads
-// handleStickyHeader();
-
+/*
 // typed.js
 var typed = new Typed(".auto-type", {
     strings: ["Web Developer", "IT Student in TalTech", "WordPress Enthusiast", "Tech Lover"],
@@ -182,8 +165,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-
-
-
-
+*/
