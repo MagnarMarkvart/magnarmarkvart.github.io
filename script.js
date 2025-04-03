@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
         shadow: true,
         shadowOffset: 35,
         shadowScale: 0.9,
-        slideShadows: true,
+        slideShadows: false,
       },
       navigation: {
         prevEl: ".prev-a",
