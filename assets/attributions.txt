@@ -25,3 +25,4 @@
 <a href="https://www.flaticon.com/free-icons/postgre" title="postgre icons">Postgre icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/mysql" title="mysql icons">Mysql icons created by Pixel perfect - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/oracle" title="oracle icons">Oracle icons created by ZFreet - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Fajrul Fitrianto - Flaticon</a>

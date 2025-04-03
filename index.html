@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
         <div class="header-content">
-
             <div 
             class="logo"
             onclick="window.scrollTo(0, 0)">
@@ -33,7 +34,6 @@
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </ul>
-
         </div>
     </header>
 
@@ -47,7 +47,7 @@
                     Hello, I'm
                 </p>
                 <h1 class="title">Magnar Markvart</h1>
-                <span class="auto-type"></span>
+                <span class="auto-type modern-text-focus"></span>
                 <div class="btn-container">
                     <button 
                     class="btn btn-color-2" 
@@ -92,21 +92,38 @@
                         class="about-pic"
                     />
                 </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="text-container">
-                            <h3>My Motivation</h3>
-                            <p>
-                                I’m a Web developer with a year of agency experience, skilled in SEO principles, web accessibility, and custom
-                                development. I’ve worked with different page builders, APIs in many client projects, ensuring functional, accessible and modern websites.
-                                Currently I am also studying software engineering at TalTech. I have a passion for learning and tackling
-                                new challenges.
-                            </p>
+                <div class="swiper-outer">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3>About Me</h3>
+                                <p>I am a <span class="highlight">WordPress web developer</span> pursuing a <span class="highlight">bachelor's degree</span> in <span class="highlight">software engineering</span>. I specialize in <span class="highlight">scalable applications</span> and <span class="highlight">agile development</span>.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3>Work Experience</h3>
+                                <p>I've completed projects of all sizes — building <span class="highlight">corporate websites</span>, developing an <span class="highlight">intranet</span>, and handling <span class="highlight">WordPress maintenance</span>, <span class="highlight">bug fixes</span>, and <span class="highlight">custom development work</span>.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3>Technical Skills</h3>
+                                <p>Comfortable with <span class="highlight">.NET</span>, <span class="highlight">C#</span>, and experienced in <span class="highlight">Python</span>, <span class="highlight">Java</span>. Skilled in <span class="highlight">database modeling</span>, <span class="highlight">integrations</span>, and working with <span class="highlight">external APIs</span>.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3>Problem Solving</h3>
+                                <p>I enjoy tackling <span class="highlight">complex codebases</span>, optimizing <span class="highlight">performance</span>, and ensuring <span class="highlight">clean, scalable solutions</span>. <span class="highlight">Critical thinking</span> and continuous learning drive my development approach.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3>Beyond Work</h3>
+                                <p>I build <span class="highlight">custom projects</span> in my free time and maintain a <span class="highlight">healthy lifestyle</span> with regular <span class="highlight">gym sessions</span> and <span class="highlight">travel</span> experiences.</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="nav-con">
+                        <img class="prev-a" src="assets/icons/arrow.png" alt="next">
+                        <img class="next-a" src="assets/icons/arrow.png" alt="next">
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>     
     </section>
 
     <section id="experience">
@@ -410,12 +427,13 @@
             <div class="divider"></div>
             <div id="footer-text">
                 <span id="copyright">Copyright &#169; Magnar Markvart 2025</span>
-                <span>Website is written from scratch using HTML, CSS and vanilla JavaScript.</span>
+                <span>Website is written from scratch using HTML, CSS and JavaScript.</span>
             </div>
         </div>
     </footer>
     <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <!-- Scripts END -->    
 </body>
