@@ -168,6 +168,7 @@ section:nth-of-type(even) {
 }
 .section__text {
     align-self: center;
+    text-align: center;
 }
 .section__text p {
     font-weight: 600;

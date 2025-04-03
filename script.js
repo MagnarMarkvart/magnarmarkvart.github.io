@@ -35,8 +35,6 @@ var typed = new Typed(".auto-type", {
     loop: true
 });
 
-// Initialize Lightbox image library
-
 // Skill rotation
 document.addEventListener("DOMContentLoaded", function () {
     const skills = document.querySelectorAll(".job-article--skills div");
