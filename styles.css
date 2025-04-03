@@ -132,7 +132,6 @@ section {
     width: var(--site-width);
     justify-content: center;
     scroll-margin-top: var(--header-height);
-    overflow: hidden;
 }
 section:nth-of-type(odd) {
     background-color: var(--primary-bg);
