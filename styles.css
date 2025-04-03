@@ -724,8 +724,7 @@ footer .menu-links {
 }
 .swiper-slide {
     display: flex;
-    align-content: center;
-    text-align: center;
+    text-align: start;
     background-color: var(--primary-bg); 
     box-shadow: 0 0px 15px gray;
     border-radius: 1rem;
