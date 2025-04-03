@@ -182,32 +182,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Swiper.js
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    enabled: true,
-    direction: 'horizontal',
-    grabCursor: true,
-    loop: true,
-    effect: 'cube',
-    preventInteractionOnTransition: true,
-
-    cubeEffect: {
-        shadow: true, // Enable shadow
-        shadowOffset: 35, // Increase shadow depth
-        shadowScale: 0.9, // Scale the shadow for more realism
-        slideShadows: true, // Show individual slide shadows
-    },
-  
-    // Navigation arrows
-    navigation: {
-        prevEl: '.prev-a',
-        nextEl: '.next-a',
-    },
-
-    // Autoplay
-    autoplay: {
+document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      grabCursor: true,
+      loop: true,
+      effect: "cube",
+      preventInteractionOnTransition: true,
+      cubeEffect: {
+        shadow: true,
+        shadowOffset: 35,
+        shadowScale: 0.9,
+        slideShadows: true,
+      },
+      navigation: {
+        prevEl: ".prev-a",
+        nextEl: ".next-a",
+      },
+      autoplay: {
         delay: 5000,
         pauseOnMouseEnter: true,
-    },
-  });
-  
+      },
+    });
+});
