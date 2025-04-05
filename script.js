@@ -119,6 +119,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 currentCategory.classList.remove("active-category");
             }
 
+            const width = window.innerWidth;
+
+            if (width < 451) {
+                jobSkillsBox.style.height = 540 + "px";
+            } else if (width < 768) {
+                jobSkillsBox.style.height = 430 + `px`;
+            } else {
+                jobSkillsBox.style.height = 405 + `px`;
+            } 
+
             const skillsIcons = category.getAttribute("data-icons").split(",");
             const skillsNames = category.getAttribute("data-skills").split(",");
             const categoryName = category.getAttribute("data-category");
@@ -153,16 +163,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    jobSkillsBox.addEventListener("mouseleave", () => {
+    jobSkillsBox.addEventListener("mouseleave", async () => {
         if (currentCategory) {
             currentCategory.classList.remove("active-category");
             currentCategory = null;
         }
         skillsDisplay.innerHTML = ""; // Clear icons
         skillsDisplayTitle.textContent = "Hover or click on a category to see my stack!";
+
+        const width = window.innerWidth;
+
+        if (width < 451) {
+        jobSkillsBox.style.height = "360px";
+        } else if (width < 768) {
+        jobSkillsBox.style.height = "270px";
+        } else {
+        jobSkillsBox.style.height = "300px";
+        }
     });
 });
-
 
 // Education dropdown functionality
 document.addEventListener("DOMContentLoaded", () => {
@@ -203,3 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 });
+
+async function sleep(seconds) {
+    return new Promise(resolve => setTimeout(resolve, seconds * 1000));
+}

@@ -25,8 +25,8 @@
         display: flex;
         max-height: 300px;
         padding: 1.5rem;
-        background-color: var(--accent-2);
-        width: 150px;
+        background-color: var(--header-bg);
+        width: 180px;
     }
     .burger-icon {
         display: inline-block !important;
@@ -51,9 +51,6 @@
         width: 220px;
         height: 220px;
     }
-    .section__pic-container img {
-        width: 100%;
-    }
     /* About */
     #about .section-container {
         flex-direction: column;
@@ -72,6 +69,10 @@
         --nav-font-size: 1.5rem;
         --site-gutter: 1rem;
         --footer-nav-size: 1rem;
+    }
+
+    header .menu-links.open {
+        width: 140px;
     }
 
     .title:not(h1) {
@@ -142,6 +143,11 @@
         gap: 1.5rem 1% !important;
     }
 
+    .skills {
+        height: 270px;
+
+    }
+
     .swiper {
         width: 90vw;
         height: 250px;
@@ -155,6 +161,9 @@
         padding-top: 3rem;
         margin-inline: auto;
     }
+    #skills-display {
+        min-height: 155px;
+    }
 }
 
 /** CUSTOM **/
@@ -164,9 +173,20 @@
         width: min-content;
     }
 }
+@media (max-width: 541px) {
+    #skills-display--title {
+        height: 55px;
+        align-content: end;
+    }
+}
 @media (max-width: 400px) {
     .contact-info-container p {
         font-size: smaller;
+    }
+}
+@media (max-width: 344px) {
+    #current-skill {
+        height: 54px;
     }
 }
 @media (max-width: 900px) {
@@ -191,6 +211,9 @@
     #categories {
         flex-wrap: wrap;
         gap: 1.5rem 0 !important;
+    }
+    .skills {
+        height: 360px;
     }
     .swiper {
         height: 300px;
