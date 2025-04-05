@@ -175,9 +175,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (width < 451) {
             jobSkillsBox.style.height = "360px";
+        } else if (width < 543) {
+            jobSkillsBox.style.height = "290px";
         } else if (width < 768) {
             jobSkillsBox.style.height = "270px";
-        } else {
+        } else {   
             jobSkillsBox.style.height = "300px";
         }
     });

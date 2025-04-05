@@ -159,7 +159,6 @@
 
     .skills {
         height: 270px;
-
     }
 
     .swiper {
@@ -190,10 +189,12 @@
     }
 }
 
-@media (max-width: 541px) {
+@media (max-width: 542px) {
     #skills-display--title {
-        height: 55px;
         align-content: end;
+    }
+    .skills {
+        height: 290px;
     }
 }
 
