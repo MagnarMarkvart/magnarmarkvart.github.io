@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: 'Handjet';
     src: url(./assets/Handjet-VariableFont.ttf) format('truetype');
@@ -40,15 +41,18 @@
     --nav-font-size: 2rem;
     --footer-nav-size: 1.5rem;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 /* ROOT END */
 
 /* GLOBAL ELEMENTS */
@@ -60,14 +64,21 @@ p {
     color: var(--text-body);
 }
 
-a, .btn, i, .icon {
+a,
+.btn,
+i,
+.icon {
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-h1, h2, h3, span {
+h1,
+h2,
+h3,
+span {
     color: var(--text-heading);
 }
+
 /* GLOBAL ELEMENTS END */
 
 /* HEADER */
@@ -79,6 +90,7 @@ header {
     box-shadow: 0 4px 5px -5px gray;
     background-color: var(--header-bg);
 }
+
 .header-content {
     display: flex;
     flex-direction: row;
@@ -89,16 +101,20 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo img {
     width: auto;
 }
+
 header .logo {
     width: 150px;
     cursor: pointer;
 }
+
 #logo-without-brand {
     display: none;
 }
+
 .menu-links {
     display: flex;
     flex-direction: row;
@@ -108,19 +124,23 @@ header .logo {
     font-weight: 600;
     list-style: none;
 }
+
 header .menu-links li a {
     font-family: 'Handjet', sans-serif;
     color: var(--header-links-color);
     text-decoration: none;
 }
+
 header .menu-links li a:hover {
     color: var(--accent-1);
     text-decoration: underline;
 }
+
 .burger-icon {
     display: none !important;
     font-size: 2.5rem;
 }
+
 /* HEADER END */
 
 /* SECTIONS GLOBAL */
@@ -133,12 +153,15 @@ section {
     justify-content: center;
     scroll-margin-top: var(--header-height);
 }
+
 section:nth-of-type(odd) {
     background-color: var(--primary-bg);
 }
+
 section:nth-of-type(even) {
     background-color: var(--secondary-bg);
 }
+
 .content-container {
     display: flex;
     flex-direction: column;
@@ -146,17 +169,20 @@ section:nth-of-type(even) {
     justify-content: center;
     gap: 0.25rem;
 }
+
 .section-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 3rem;
 }
+
 .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
 }
+
 .section__pic-container img {
     border-radius: 50%;
     box-shadow: 0 0 7px 3px gray;
@@ -166,13 +192,16 @@ section:nth-of-type(even) {
     object-fit: cover;
     object-position: center;
 }
+
 .section__pic-container img:hover {
     transform: scale(1.05);
 }
+
 .section__text {
     align-self: center;
     text-align: center;
 }
+
 .section__text p {
     font-weight: 600;
 }
@@ -180,18 +209,22 @@ section:nth-of-type(even) {
 .section__text__p1 {
     text-align: center;
 }
+
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
+
 .title {
     font-size: var(--h1-font-size);
     line-height: 1.5;
     text-align: center;
 }
+
 .icon {
     height: 2rem;
 }
+
 /* SECTIONS GLOBAL END */
 
 /** Profile **/
@@ -200,29 +233,35 @@ section:nth-of-type(even) {
     justify-content: space-between;
     gap: 2rem;
 }
+
 #profile .section__text {
     flex-direction: row;
     gap: 0.5rem;
 }
+
 .modern-text-focus {
     line-height: 2;
     font-family: 'Handjet', sans-serif;
     font-size: var(--nav-font-size);
 }
+
 #socials-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
+
 #socials-container .icon:hover {
     opacity: 0.5;
 }
+
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-block: 1rem;
 }
+
 .btn {
     font-weight: 600;
     font-size: var(--button-font-size);
@@ -302,20 +341,25 @@ section:nth-of-type(even) {
     box-shadow: 0 0 10px 1px gray;
     transition: all 0.7s ease;
 }
+
 .details-container--about:hover {
     background: whitesmoke;
 }
+
 .details-container--about .icon {
     width: 2rem;
     height: 2rem;
 }
+
 .details-container--about h3 {
     margin-bottom: 1rem;
 }
+
 .details-container--about .article-container {
     align-self: start;
     width: 100%;
 }
+
 .job-article--skills {
     display: flex;
     flex-direction: row;
@@ -325,20 +369,24 @@ section:nth-of-type(even) {
     gap: 1rem;
     margin-block: 1rem;
 }
+
 .job-article--skills span {
     display: none;
 }
+
 .job-article--skills .icon {
     width: 3rem;
     height: auto;
     cursor: pointer;
 }
-.job-article--skills > div {
+
+.job-article--skills>div {
     flex-basis: 30%;
-    justify-content: center; 
+    justify-content: center;
     opacity: 0.5;
     transition: opacity 0.5s ease;
 }
+
 #current-skill {
     margin-top: 2rem;
     justify-content: center;
@@ -378,7 +426,7 @@ section:nth-of-type(even) {
     transform: rotate(180deg);
 }
 
-.text-container  {
+.text-container {
     gap: 1rem;
     display: flex;
     justify-content: center;
@@ -403,11 +451,14 @@ section:nth-of-type(even) {
     box-shadow: 0 0 10px 1px gray;
     transition: background 0.5s ease;
 }
+
 .details-container {
     height: 100%;
 }
+
 .details-container p {
-    text-align: left;;
+    text-align: left;
+    ;
 }
 
 /* Experience Section */
@@ -440,7 +491,7 @@ article {
 
 article .icon,
 .details-container .icon {
-    cursor: default;   
+    cursor: default;
 }
 
 article p {
@@ -449,8 +500,8 @@ article p {
 }
 
 article .skill {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .job-article {
@@ -458,14 +509,17 @@ article .skill {
     flex-direction: column;
     width: 100%;
 }
+
 .job-article div:not(.job-article-text) {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 .job-article-text {
     font-weight: 600;
 }
+
 .job-title {
     font-size: larger;
 }
@@ -498,7 +552,7 @@ article .skill {
     border-color: rgb(163, 163, 163);
 }
 
-.details-container > .btn-container {
+.details-container>.btn-container {
     position: relative;
     align-self: flex-end;
 }
@@ -537,6 +591,7 @@ article .skill {
     color: var(--text-body);
     transition: opacity 0.5s ease;
 }
+
 .contact-info-container a:hover {
     opacity: 0.75;
 }
@@ -576,6 +631,7 @@ footer .menu-links * {
     font-size: var(--footer-nav-size);
     transition: all 0.5s ease;
 }
+
 footer .menu-links a:hover {
     text-decoration: underline;
     color: var(--accent-1);
@@ -609,7 +665,7 @@ footer .menu-links {
 #skills-visualizer {
     position: relative;
     text-align: center;
-    
+
     width: 100%;
 }
 
@@ -631,7 +687,8 @@ footer .menu-links {
 .category {
     text-align: center;
     cursor: pointer;
-    opacity: 0.7;;
+    opacity: 0.7;
+    ;
     transition: all 0.3s ease;
 }
 
@@ -664,12 +721,13 @@ footer .menu-links {
     transform: translateY(30px);
     animation: fadeInUp 1.5s forwards;
 }
+
 @keyframes fadeInUp {
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
 .skills {
     height: 300px;
@@ -740,19 +798,22 @@ footer .menu-links {
     width: 500px;
     height: 400px;
 }
+
 .swiper-slide {
     display: flex;
     text-align: start;
-    background-color: var(--primary-bg); 
+    background-color: var(--primary-bg);
     box-shadow: 0 0px 15px gray;
     border-radius: 1rem;
     padding: 3rem;
 }
+
 .swiper-slide h3 {
     font-size: var(--nav-font-size);
     margin-bottom: 1.5rem;
 
 }
+
 .nav-con {
     width: 500px;
     display: flex;
@@ -762,7 +823,9 @@ footer .menu-links {
     padding-top: 3rem;
     margin-inline: auto;
 }
-.prev-a, .next-a {
+
+.prev-a,
+.next-a {
     display: flex;
     height: 4rem;
     width: 4rem;
@@ -770,14 +833,18 @@ footer .menu-links {
     opacity: 0.7;
     transition: all 0.5s ease;
 }
-.prev-a:hover, .next-a:hover {
+
+.prev-a:hover,
+.next-a:hover {
     transform: scale(1.2);
     opacity: 1;
 }
+
 .prev-a:hover {
     transform: rotate(180deg) scale(1.2);
     opacity: 1;
 }
+
 .prev-a {
     transform: rotate(180deg);
 }
@@ -785,6 +852,7 @@ footer .menu-links {
 .highlight {
     font-weight: 600;
 }
+
 .swiper-slide p {
     font-size: var(--text-font-size);
 }

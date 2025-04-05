@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 jobSkillsBox.style.height = 430 + `px`;
             } else {
                 jobSkillsBox.style.height = 405 + `px`;
-            } 
+            }
 
             const skillsIcons = category.getAttribute("data-icons").split(",");
             const skillsNames = category.getAttribute("data-skills").split(",");
@@ -174,11 +174,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const width = window.innerWidth;
 
         if (width < 451) {
-        jobSkillsBox.style.height = "360px";
+            jobSkillsBox.style.height = "360px";
         } else if (width < 768) {
-        jobSkillsBox.style.height = "270px";
+            jobSkillsBox.style.height = "270px";
         } else {
-        jobSkillsBox.style.height = "300px";
+            jobSkillsBox.style.height = "300px";
         }
     });
 });
@@ -201,25 +201,25 @@ document.addEventListener("DOMContentLoaded", () => {
 // Swiper.js
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      grabCursor: true,
-      loop: true,
-      effect: "cube",
-      preventInteractionOnTransition: true,
-      cubeEffect: {
-        shadow: true,
-        shadowOffset: 35,
-        shadowScale: 0.9,
-        slideShadows: false,
-      },
-      navigation: {
-        prevEl: ".prev-a",
-        nextEl: ".next-a",
-      },
-      autoplay: {
-        delay: 5000,
-        pauseOnMouseEnter: true,
-      },
+        direction: "horizontal",
+        grabCursor: true,
+        loop: true,
+        effect: "cube",
+        preventInteractionOnTransition: true,
+        cubeEffect: {
+            shadow: true,
+            shadowOffset: 35,
+            shadowScale: 0.9,
+            slideShadows: false,
+        },
+        navigation: {
+            prevEl: ".prev-a",
+            nextEl: ".next-a",
+        },
+        autoplay: {
+            delay: 5000,
+            pauseOnMouseEnter: true,
+        },
     });
 });
 

@@ -21,6 +21,7 @@
         overflow: hidden;
         transition: all 1s ease;
     }
+
     header .menu-links.open {
         display: flex;
         max-height: 300px;
@@ -28,15 +29,19 @@
         background-color: var(--header-bg);
         width: 180px;
     }
+
     .burger-icon {
         display: inline-block !important;
     }
+
     header .logo {
         width: 75px;
     }
+
     #logo-without-brand {
         display: flex;
     }
+
     #logo {
         display: none;
     }
@@ -47,10 +52,12 @@
         align-items: center;
         text-align: center;
     }
+
     .section__pic-container {
         width: 220px;
         height: 220px;
     }
+
     /* About */
     #about .section-container {
         flex-direction: column;
@@ -109,35 +116,42 @@
         font-size: smaller;
     }
 
-    .job-article--skills > div {
+    .job-article--skills>div {
         flex-basis: 32% !important;
-        justify-content: center; 
+        justify-content: center;
         opacity: 0.5;
         transition: opacity 0.5s ease;
     }
+
     .job-article--skills {
         gap: 1.5rem 2% !important;
     }
+
     .focus {
         font-size: 1rem !important;
         font-weight: 700 !important;
     }
+
     .category img {
         width: 2.5rem;
         height: auto;
     }
+
     .skill-icon {
         width: 2rem;
         height: auto;
     }
+
     .skill-icon[alt="Oracle SQL icon"] {
         width: 3.5rem;
         height: auto;
         padding-block: calc((2rem - 8.6834px) / 2) !important;
     }
+
     .skill-item {
         flex-basis: 32%;
     }
+
     #skills-display {
         flex-wrap: wrap;
         gap: 1.5rem 1% !important;
@@ -152,6 +166,7 @@
         width: 90vw;
         height: 250px;
     }
+
     .nav-con {
         width: 100%;
         display: flex;
@@ -161,6 +176,7 @@
         padding-top: 3rem;
         margin-inline: auto;
     }
+
     #skills-display {
         min-height: 155px;
     }
@@ -173,48 +189,58 @@
         width: min-content;
     }
 }
+
 @media (max-width: 541px) {
     #skills-display--title {
         height: 55px;
         align-content: end;
     }
 }
+
 @media (max-width: 400px) {
     .contact-info-container p {
         font-size: smaller;
     }
 }
+
 @media (max-width: 344px) {
     #current-skill {
         height: 54px;
     }
 }
+
 @media (max-width: 900px) {
-    .job-article--skills > div {
+    .job-article--skills>div {
         flex-basis: 40%;
-        justify-content: center; 
+        justify-content: center;
         opacity: 0.5;
         transition: opacity 0.5s ease;
     }
+
     .job-title {
         font-size: 1rem;
         font-weight: 900;
     }
+
     .company {
         font-size: 0.75rem;
     }
 }
+
 @media (max-width: 450px) {
     .category {
         flex-basis: 33%;
     }
+
     #categories {
         flex-wrap: wrap;
         gap: 1.5rem 0 !important;
     }
+
     .skills {
         height: 360px;
     }
+
     .swiper {
         height: 300px;
     }
