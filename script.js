@@ -26,7 +26,7 @@ function toggleMenu() {
 
 // typed.js
 var typed = new Typed(".auto-type", {
-    strings: ["Web Developer", "IT Student in TalTech", "WordPress Enthusiast", "Tech Lover"],
+    strings: ["Web Developer", "IT Student at TalTech University", "WordPress Enthusiast", "Tech Lover"],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
