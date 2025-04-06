@@ -102,7 +102,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.header-content i {
+.header-content i:is(.fa-person-walking-arrow-loop-left) {
     display: block;
     font-size: 3rem;
     color: var(--text-heading);
@@ -149,7 +149,7 @@ header .menu-links li a:hover {
 
 .burger-icon {
     display: none !important;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* HEADER END */
