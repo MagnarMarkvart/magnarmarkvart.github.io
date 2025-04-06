@@ -1,5 +1,3 @@
-// IMPORTS
-
 function toggleMenu() {
     const menu = document.querySelector("header .menu-links");
     const icon = document.querySelector(".burger-icon");
@@ -25,7 +23,6 @@ function toggleMenu() {
         }
     });
 }
-
 
 // typed.js
 var typed = new Typed(".auto-type", {
@@ -224,9 +221,21 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: ".prev-a",
             nextEl: ".next-a",
         },
+
         autoplay: {
-            delay: 5000,
-            pauseOnMouseEnter: true,
+            enabled: false,
+        },
+
+        breakpoints: {
+            // >=
+            768: {
+                autoplay: {
+                    enabled: true,
+                    delay: 5000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: true,
+                },
+            }
         },
     });
     const swiperProjects = new Swiper(".swiper-projects", {
