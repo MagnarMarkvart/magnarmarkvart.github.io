@@ -26,7 +26,7 @@
         display: flex;
         max-height: 300px;
         padding: 1.5rem;
-        background-color: var(--header-bg);
+        background-color: var(--mobile-menu-bg);
         width: 180px;
     }
 
@@ -64,6 +64,10 @@
         align-items: center;
         text-align: center;
     }
+
+    /* .swiper-projects .swiper-slide {
+        min-height: auto;
+    } */
 }
 
 /*** MOBILE ***/
@@ -163,7 +167,7 @@
 
     .swiper {
         width: 90vw;
-        height: 250px;
+        height: 200px;
     }
 
     .nav-con {
@@ -178,6 +182,32 @@
 
     #skills-display {
         min-height: 155px;
+    }
+
+    .typed-cursor {
+        font-size: 1.5rem;
+    }
+
+    #projects .swiper-outer {
+        max-width: 350px;
+    }
+
+    #projects .nav-con {
+        padding: 0;
+    }
+    .prev-proj, .next-proj, .prev-a, .next-a {
+        width: 3rem;
+        height: 3rem;
+    }
+    #projects .swiper-slide-next {
+        opacity: 0.5;
+    }
+
+    /* Credits */ 
+    .credits-section {
+        gap: 2rem;
+        align-items: start;
+        text-align: left;
     }
 }
 
@@ -241,8 +271,7 @@
     .skills {
         height: 360px;
     }
-
     .swiper {
-        height: 300px;
+        height: 240px;
     }
 }

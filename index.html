@@ -26,7 +26,7 @@
                 <img id="logo" src="assets/logos/logo.svg" alt="MM Solutions Logo">
                 <img id="logo-without-brand" src="assets/logos/logo-without-brand.svg" alt="MM Solutions Logo">
             </div>
-            <i onclick="toggleMenu()" class="fa-solid fa-bars burger-icon"></i>
+            <i onclick="toggleMenu()" class="fa-solid fa-bars burger-icon" title="Toggle menu"></i>
             <ul class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -82,8 +82,10 @@
                                 <h3>About Me</h3>
                                 <p>I am a <span class="highlight">WordPress web developer</span> pursuing a <span
                                         class="highlight">bachelor's degree</span> in <span class="highlight">software
-                                        engineering</span>. I specialize in <span class="highlight">scalable
-                                        applications</span> and <span class="highlight">agile development</span>.</p>
+                                        engineering</span>. I specialize in scalable
+                                    applications, while maintaining <span class="highlight">a thrive to learn and
+                                        grow</span> with each line of code written.
+                                </p>
                             </div>
                             <div class="swiper-slide">
                                 <h3>Work Experience</h3>
@@ -91,7 +93,8 @@
                                         websites</span>, developing an <span class="highlight">intranet</span>, and
                                     handling <span class="highlight">WordPress maintenance</span>, <span
                                         class="highlight">bug fixes</span>, and <span class="highlight">custom
-                                        development work</span>.</p>
+                                        development work</span>.
+                                </p>
                             </div>
                             <div class="swiper-slide">
                                 <h3>Technical Skills</h3>
@@ -108,7 +111,8 @@
                                 <p>I enjoy tackling <span class="highlight">complex codebases</span>, optimizing <span
                                         class="highlight">performance</span>, and ensuring <span
                                         class="highlight">clean, scalable solutions</span>. <span
-                                        class="highlight">Critical thinking</span> and continuous learning drive my
+                                        class="highlight">Critical thinking</span> and <span
+                                        class="highlight">continuous learning</span> drive my
                                     development approach.</p>
                             </div>
                             <div class="swiper-slide">
@@ -143,14 +147,14 @@
                     <div class="about-containers">
                         <div class="details-container--about">
                             <img src="assets/education.png" alt="Education Icon" class="icon" />
-                            <h3>Education</h3>
+                            <h4>Education</h4>
 
                             <div class="education">
                                 <div class="education-item active">
-                                    <h4 class="education-title">
+                                    <h5 class="education-title">
                                         University
                                         <span class="dropdown-icon">+</span>
-                                    </h4>
+                                    </h5>
                                     <div class="education-content">
                                         <p class="focus">TalTech - Final Course</p>
                                         <p>Major in Information Technologies</p>
@@ -159,10 +163,10 @@
                                 </div>
 
                                 <div class="education-item">
-                                    <h4 class="education-title">
+                                    <h5 class="education-title">
                                         High School
                                         <span class="dropdown-icon">+</span>
-                                    </h4>
+                                    </h5>
                                     <div class="education-content">
                                         <p class="focus">Gustav Adolf Grammar School</p>
                                         <p>French/English Language Studies Focus</p>
@@ -173,7 +177,7 @@
                         </div>
                         <div class="details-container--about work-experience">
                             <img src="assets/studies.png" alt="Experience Icon" class="icon" />
-                            <h3>Work Experience</h3><br>
+                            <h4>Work Experience</h4><br>
                             <div class="article-container">
                                 <article class="job-article">
                                     <div class="job-article-text">
@@ -217,7 +221,7 @@
                         </div>
                         <div class="details-container--about skills">
                             <img src="assets/experience.png" alt="Experience Icon" class="icon" />
-                            <h3>Job Skills</h3><br>
+                            <h4>Job Skills</h4><br>
 
 
                             <div id="skills-visualizer">
@@ -269,64 +273,165 @@
             <p class="section__text__p1">Review Some Of My</p>
             <h2 class="title">Projects</h2>
             <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/uno_project.png" alt="Uno Project" class="project-img" />
-                    </div>
-                    <h3 class="project-title">
-                        UNO! Console and Web Application (.NET / C#)
-                    </h3>
-                    <p class="project-description">
-                        Playable game with classic UNO! rules,
-                        saving functionality with two methods,
-                        simple AI players integrated
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/MagnarMarkvart/Uno_CardGame'">
-                            GitHub
-                        </button>
+
+
+
+                <div class="swiper-outer">
+                    <div class="swiper-projects">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/projects/sol/sol-1.jpg" alt="SOL Project" class="project-img" />
+                                <div class="project-details">
+                                    <h3 class="project-title">
+                                        Wordpress website and integrations for SOL
+                                    </h3>
+                                    <p class="project-description hidden">
+                                        I developed a custom WordPress website for SOL, an international cleaning and
+                                        infrastructure company. Working from a
+                                        Figma design, I built the site using WordPress and Elementor, enhanced with
+                                        custom PHP and JavaScript snippets. The
+                                        project included integrating an external API to continuously fetch and process
+                                        data into custom ACF post types and
+                                        fields. All rights reserved to SOL.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-1 toggle-description">Details</button>
+                                        <a href="https://www.sol.ee/" class="btn btn-color-2 project-btn"
+                                            target="_blank" rel="noreferrer nofollow">
+                                            Live
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/projects/kkt/kkt-nobel.jpg" alt="KKT Project" class="project-img" />
+                                <div class="project-details">
+                                    <h3 class="project-title">
+                                        Kiviõli Keemiatööstus Intranet
+                                    </h3>
+                                    <p class="project-description hidden">
+                                        I developed a custom intranet solution for Kiviõli Keemiatööstus using WordPress
+                                        and Elementor. The project featured
+                                        continuous synchronization with the company’s internal workers API, ensuring
+                                        real-time data updates. It also involved
+                                        integrating and extending poorly documented WordPress plugins, requiring
+                                        in-depth codebase analysis and customization
+                                        through WP hooks to achieve the needed functionality. All rights reserved to
+                                        Kiviõli Keemiatööstus.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-1 toggle-description">Details</button>
+                                        <a href="https://www.nobeldigital.ee/tehtud-tood/kivioli-keemiatoostuse-siseveeb/"
+                                            class="btn btn-color-2 project-btn" target="_blank"
+                                            rel="noreferrer nofollow">
+                                            More Info
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/projects/carsystem.png" alt="Carsystem Project" class="project-img" />
+                                <div class="project-details">
+                                    <h3 class="project-title">
+                                        Car Detailing Company Website
+                                    </h3>
+                                    <p class="project-description hidden">
+                                        I took over an existing website project for a car detailing company, completing
+                                        and modernizing the site. While the
+                                        initial design and structure were in place, I focused on updating legacy
+                                        solutions, optimizing performance, and aligning
+                                        the site with current web standards and best practices. All rights reserved to
+                                        Carsystem.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-1 toggle-description">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/pestcontrol-app.png" alt="Pestcontrol Project" class="project-img" />
+                                <div class="project-details">
+                                    <h3 class="project-title">
+                                        Custom Business Platform for Internal Operations
+                                    </h3>
+                                    <p class="project-description hidden">
+                                        I developed a robust distributed application for my father's company to manage
+                                        data, storage, and work
+                                        schedules. The system was tailored to the company’s specific needs and featured
+                                        a well-structured architecture with
+                                        separate layers for business logic (BLL), data access (DAL), and application
+                                        control, featuring user management and
+                                        different user roles. It included a Dockerized
+                                        PostgreSQL database, CI/CD pipelines for automated deployments to Azure, a
+                                        server-side UI using MVC, and a dynamic
+                                        client-side UI built with Vue.js.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-1 toggle-description">Details</button>
+                                        <a href="https://github.com/MagnarMarkvart/Pestcontrol"
+                                            class="btn btn-color-2 project-btn" target="_blank">
+                                            GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/uno_project.png" alt="UNO School Project" class="project-img" />
+                                <div class="project-details">
+                                    <h3 class="project-title">
+                                        UNO! Game – Console & Web App (.NET/C#)
+                                    </h3>
+                                    <p class="project-description hidden">
+                                        As a school project, I developed a playable UNO! game using .NET/C#. The
+                                        application featured both a console and web
+                                        interface, backed by a SQLite database. It was structured with a clear
+                                        separation of concerns: a Business Logic Layer
+                                        (BLL) for game mechanics, a Data Access Layer (DAL) for database operations, and
+                                        a simple client UI. Basic multiplayer
+                                        functionality and AI opponents were also implemented.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-1 toggle-description">Details</button>
+                                        <a href="https://github.com/MagnarMarkvart/Uno_CardGame"
+                                            class="btn btn-color-2 project-btn" target="_blank">
+                                            GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/projects/SCCs.png" alt="Kosaraju Algorithm Project"
+                                    class="project-img" />
+                                <div class="project-details">
+                                    <h3 class="project-title">
+                                        Kosaraju’s Algorithm – Java Console Application
+                                    </h3>
+                                    <p class="project-description hidden">
+                                        I built an object-oriented Java console application that implements Kosaraju’s
+                                        linear-time algorithm to identify
+                                        strongly connected components in directed graphs of any size. The program
+                                        generates random graphs, processes them using
+                                        HashMap and LinkedList data structures, and outputs the results in a clear,
+                                        readable console format.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-1 toggle-description">Details</button>
+                                        <a href="https://github.com/MagnarMarkvart/Implementation_Of_Kosaraju_Algorithm"
+                                            class="btn btn-color-2 project-btn" target="_blank">
+                                            GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/book_project.png" alt="Book Project" class="project-img" />
-                    </div>
-                    <h3 class="project-title">
-                        Book Rating Project (HTML, CSS and PHP)
-                    </h3>
-                    <p class="project-description">
-                        CRUD Controllers for books and authors,
-                        data is saved to text files,
-                        simple (one of my first) yet effective book management web app
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/MagnarMarkvart/Book_Management_WebApp'">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/graph_project.png" alt="Graph Project" class="project-img" />
-                    </div>
-                    <h3 class="project-title">
-                        Implementation of Kosaraju's Algorithm (Java)
-                    </h3>
-                    <p class="project-description">
-                        Implementation of a linear time algorithm - Kosaraju's Algorithm,
-                        program finds strongly connected components in randomly generated graphs,
-                        output of the program is presented in a readable form in the console
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/MagnarMarkvart/Implementation_Of_Kosaraju_Algorithm'">
-                            GitHub
-                        </button>
-                    </div>
+                <div class="nav-con">
+                    <img class="prev-proj" src="assets/icons/arrow.png" alt="next">
+                    <img class="next-proj" src="assets/icons/arrow.png" alt="next">
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -368,6 +473,7 @@
                 <span id="copyright">Copyright &#169; Magnar Markvart 2025</span>
                 <span>Website is written from scratch using HTML, CSS and JavaScript.</span>
             </div>
+            <div class="attributions"><a href="/credits">Credits</a></div>
         </div>
     </footer>
     <!-- Scripts -->

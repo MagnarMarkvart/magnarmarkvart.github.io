@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let activeIndex = 0;
     let interval;
     let userInteracted = false;
+    const isTabletOrBelow = window.innerWidth <= 1024;
 
     function updateActiveSkill(index) {
         skills.forEach((skill, i) => {
@@ -76,19 +77,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    workExperience.addEventListener("mouseenter", () => {
-        userInteracted = true;
-        clearInterval(interval);
-    });
+    if (!isTabletOrBelow) {
+        workExperience.addEventListener("mouseenter", () => {
+            userInteracted = true;
+            clearInterval(interval);
+        });
 
-    workExperience.addEventListener("mouseleave", () => {
-        userInteracted = false;
-        startRotation();
-    });
+        workExperience.addEventListener("mouseleave", () => {
+            userInteracted = false;
+            startRotation();
+        });
+    }
 
     updateActiveSkill(activeIndex);
     startRotation();
 });
+
 
 // Stack visualizer
 document.addEventListener("DOMContentLoaded", () => {
@@ -208,6 +212,8 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         effect: "cube",
         preventInteractionOnTransition: true,
+        roundLengths: true,
+        
         cubeEffect: {
             shadow: true,
             shadowOffset: 35,
@@ -223,7 +229,55 @@ document.addEventListener("DOMContentLoaded", function () {
             pauseOnMouseEnter: true,
         },
     });
+    const swiperProjects = new Swiper(".swiper-projects", {
+        direction: "horizontal",
+        grabCursor: true,
+        preventInteractionOnTransition: true,
+        slidesPerView: 1,
+        spaceBetween: 50,
+
+        breakpoints: {
+            // >=
+            768: {
+                slidesPerView: 2,
+            }
+        },
+
+        navigation: {
+            prevEl: ".prev-proj",
+            nextEl: ".next-proj",
+        }
+    });
 });
+
+// Project Description Buttons
+
+document.addEventListener("DOMContentLoaded", () => {
+    const projectButtons = document.querySelectorAll(".toggle-description");
+
+    projectButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const projectDetails = button.closest(".project-details");
+            if (!projectDetails) return;
+
+            const description = projectDetails.querySelector(".project-description");
+            if (!description) return;
+
+            const isExpanded = description.style.maxHeight;
+
+            if (isExpanded) {
+                // Collapse
+                description.style.maxHeight = null;
+                button.textContent = "Details";
+            } else {
+                // Expand
+                description.style.maxHeight = description.scrollHeight + "px";
+                button.textContent = "Hide Details";
+            }
+        });
+    });
+});
+
 
 async function sleep(seconds) {
     return new Promise(resolve => setTimeout(resolve, seconds * 1000));
