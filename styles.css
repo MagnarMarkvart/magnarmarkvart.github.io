@@ -164,7 +164,7 @@ section {
     margin: 0 auto;
     width: var(--site-width);
     justify-content: center;
-    scroll-margin-top: var(--header-height);
+    scroll-margin-top: var(--header-height) !important;
 }
 
 section:nth-of-type(odd) {
@@ -911,7 +911,7 @@ footer .menu-links {
 
 /* Swiper Projects */
 #projects {
-    overflow: hidden;
+    overflow: clip;
 }
 .swiper-projects {
     width: 100%;
