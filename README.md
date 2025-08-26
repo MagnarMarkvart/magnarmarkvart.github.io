@@ -6,7 +6,7 @@ Welcome to my personal developer portfolio! This project showcases my skills in 
 
 I'm a **web developer** with a year of experience at a **digital agency**, specializing in WordPress development, SEO principles, web accessibility, and custom web solutions. Currently, I'm studying **Software Engineering at TalTech University**, expanding my expertise in backend development and modern web technologies.
 
-I am passionate about **building performant, accessible, and visually engaging websites**, always striving to improve and learn more. This portfolio reflects my **clean coding practices, attention to detail, and problem-solving abilities**.
+I am passionate about **building performant, accessible, and visually engaging websites**, always striving to improve and learn more.
 
 ## Features of This Portfolio
 
@@ -31,4 +31,3 @@ Check out my portfolio live: **magnarmarkvart.github.io**
 I welcome any feedback on my projects! If you have suggestions for improvements or spot any issues, feel free to open an issue or contact me directly.
 
 Thanks for visiting my portfolio!
-
